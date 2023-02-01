@@ -1,3 +1,4 @@
+<!-- There is priority for CSS i.e if Same emt has CSS in inline extrnal link etc so priority given in this order -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1st CSS</title>
-
+    <!-- <style>
+        body{
+            background-color: rgb(86, 70, 174); Make Whole background of Webpage of this color
+        }
+    </style> -->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Using CSS to Edit Below written html code -->
+    <style>
+        #first{
+            background: rgb(146, 55, 158);
+            color: rgb(231, 221, 221);
+        }
+        #second{
+            background: rgb(27, 112, 177);
+            color: white;
+        }
+        .red{
+            height: 1600px;
+            width: 1200px;
+            background-image: url(telegram\ bot.png);
+            color:  rgb(217, 226, 237);
+            background-color: rgb(144, 27, 93);
+            border: 30px solid black;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+             background-position:top center; 
+        }
+        .bg-blue{
+            background: rgb(148, 148, 220);
+        }
+        .border-green,h3{
+            color: green;
+        }
+        *{ /*make margin and padding of whole webpage of this much */
+            margin:0;
+            padding:0;
+        }
+/* Adding Imgage as Background  */
+        #first{
+            border: 2px solid black;
+            background-image: url(image.jpg);
+            border-image-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-
+    <!--id is Unique-->
+    <div id="first">
+        First
     </div>
+    <!-- One class for many Emts  -->
+    <!-- One Emt many Classes -->
+    <span id="second">
+        Second
+    </span>
+    <section class="red"  >
+        
+    <pre>
+        ‘They look so fine, and young, and wrapped up in each other. Love is so fresh and clean at that age. Don’t you think?’
+
+        ‘Margareta! I’m surprised at you! We both know there’s no such thing as love!’
+
+        ‘What do you call it?’
+
+        Tatyana snuffed our her cigarette. That sly smile. ‘Mutations of wanting.’
+
+        ‘You’re not serious.’
+
+
+        ‘I am quite serious. Look at those kids. The boys want to get the girls into bed so they can have their corks 
+        popped off their bottles and forth. When a man blows his nose you don’t call it love. Why get all misty-eyed when
+        a man blows another part of his anatomy? As for the girls, they’re either going along for the ride because they 
+        can get the things   they want from the boys, or else maybe they enjoy being in bed too. Thought I doubt it. 
+        I never knew an eighteen-year-old boy who didn’t drop the egg off his spoon at the first fence.’
+
+        ‘But that’s list! You’re talking about lust, not love.’
+
+        ‘Lust is the hard sell. Love is the soft sell. The profit margin is the same.’
+
+        ‘But love’s the opposite of self-interest. True, tender, love is pure and selfless.’
+
+        ‘No. True, tender love is self-interest so sinewy that it only looks selfless.’
+    </pre>
+    </section>
+    <sec class=" bg-blue border-green">
+        red bg-blue border-green
+    </sec>
+    <!-- we can use multiple emts or classes to define CSS simultaneously using class1,class2,h1,h3,#id {---}etc -->
+        <h3>This is h3</h3>
 </body>
 </html>

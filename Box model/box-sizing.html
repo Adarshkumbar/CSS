@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+/* BOX SIZING --> 1.CONTENT BOXING 2.BORDER BOXING */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1{
+            height: 900px;
+            width: 200px;
+            color: white;
+            background: rgb(15, 210, 86);
+            border:2px black solid ;
+            margin: 5px;
+        }
+        .box2{
+            height: 200px;
+            width: 100%;
+            color: white;
+            background: rgb(113, 15, 210);
+            border:2px rgb(132, 187, 15) solid ;
+            padding: 50px;
+            box-sizing: border-box;
+             /* box-sizing: CONTENT-box; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        This is box 1
+        <div class="box2">
+            This is box 2
+        </div>
+    </div>
+   
+</body>
+</html>
