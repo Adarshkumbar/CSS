@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY TYPES</title>
+
+<!-- 1.Inline 2.Block 3.Inline-Block 4.Block and Visibility hidden -->
+
+<!-- Display:None ->removes emt ...Visibility:hidden->Removes emt but place will be reserved ex given below -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .b1{
+            display: inline-block;
+            /* display: none; */
+            background: yellow;
+            color: black;
+            height: 200px;
+            width: 300px;
+            padding: 10px;/*ONLY LEFT AND RIGHT PADDING AND MARGIN WORKS*/
+            margin: 40px 10px 50px 40px;
+            border: 2px black solid;/*This works too */
+            /* Below is for text dec and text transform */
+            /* text-align:center;
+            text-decoration:line-through;/*cross on words*/
+            /*text-transform:lowercase; */ 
+        }
+        .b2{
+            display: inline-block;
+            /* visibility:hidden; */   
+            background: red;
+            color: black;
+            height: 200px;
+            width: 300px;
+            padding: 10px;
+            border: 2px black solid;/*This works too */
+        }
+/* Below section is for FONTS */
+        span{
+            background: aqua;
+            font-size:25px;
+            font-weight:560px ;
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; *//*One way*/
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <div class="b1">
+        FOR DISPLAY:INLINE HEIGHT AND WIDTH WONT BE AFFECTED EVEN TOP BOTTOM MARGIN AND PADDING(But Left and Right works)
+    </div>
+    <div class="b2">
+        FOR DISPLAY:BLOCK HEIGH AND WIDTH WORKS EVEN MARGIN AND PADDING BUT ELEMENTS/BOXES COMES ONE BELOW THE OTHER 
+    </div>
+    <span>
+        So we have used Diplay:inline-block to write one element(tag+content) beside other
+    </span>
+</body>
+</html>

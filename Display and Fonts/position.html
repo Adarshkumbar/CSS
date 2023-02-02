@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+<!-- Position can be used to Set Any element (Box so on) anywhere  -->
+<!-- Relative Related to container irrespective of non-static -->
+<!-- Absolute related to html and non static parent -->
+<!-- Fixed posi fixed like chat bot -->
+<style>
+    /* used sticky and fixed position properties too */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            background: #000;
+            color: white;
+            height: 100px;
+            position: sticky;
+            top: 0%;
+        }
+        .sample{
+            background: rgb(228, 225, 225);
+            color: rgb(195, 157, 8);
+            display: inline-block;
+            position: absolute;
+            /* bottom: 0px;
+            left:1283px; */
+            height: 50px;
+            width: 250px;
+            border-radius: 15%;
+            text-align: center;
+            text-rendering: geometricPrecision;
+            background: lime;
+            position:fixed;
+        }
+        .box{
+            background: rgb(122, 122, 215);
+            height: 200vh;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+    <div class="box">
+        This is box
+        <div class="sample">
+            This is Sample
+       </div>
+    </div>
+</body>
+</html>

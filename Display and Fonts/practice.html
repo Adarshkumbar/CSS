@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1.one nav and 2 divs side by side(remove space btw divs to make side by side i.e 50%+50%+) -->
+    <!-- 2.Add footer 3.Remove underlines from Nav bar and make text white (Becomes blue if links added) -->
+    <!-- 4.Usage of display :none and Visibility:hidden also making footer text all Uppercase -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Practice </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            box-sizing: border-box;
+            background: blue;
+            color:black ;
+            width:100%;
+            height: 50px;
+            padding: 10px;
+            background-image: url(image.jpg);
+        }
+        .b2
+        {
+            box-sizing: border-box;
+            display: inline-block;
+            background: rgb(239, 234, 234);
+            color: black;
+            width: 50%;
+            height: 800px;
+            /* visibility: hidden; *//*right box wont move to left place reserved*/
+            /* display: none; */ /*right box moves to left*/
+        }
+        .b3{
+            box-sizing: border-box;
+            display: inline-block;
+            background: red;
+            color:black;
+            width: 50%;
+            height: 800px;
+        }
+        footer{
+            text-align: center;
+            background-color: rgb(6, 5, 3);
+            color: rgb(231, 215, 215);
+            height: 50px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            text-transform: uppercase;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin: 120px;
+            
+        }
+        nav ul li{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/Display%20and%20Fonts/practice.html" target="_blank">HOME</a></li>
+            <li><a href="http://127.0.0.1:5500/Display%20and%20Fonts/practice.html" target="_blank">ABOUT</a></li>
+            <li><a href="http://127.0.0.1:5500/Display%20and%20Fonts/practice.html" target="_blank">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="b2">
+        THIS IS BOX 2
+    </div><div class="b3">
+        THIS IS BOX 3
+    </div>
+    <footer>
+        2023&#169;Adarsh
+    </footer>
+</body>
+</html>

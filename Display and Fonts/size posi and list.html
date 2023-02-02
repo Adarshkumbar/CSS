@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- em -Parents size will be assigned and when (2em 3em so on) multiplied with that size-->
+<!-- rem -HTML size will be assigned and when (2em 3em so on) multiplied with that size-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            font-size: 2rem;
+            background: #000;
+            color: white;
+        }
+        .f{
+            font-size: 10px;
+            background: #000;
+            color: white;
+        }
+        .box1{
+            background: rgb(29, 143, 224);
+            width: 50vw;
+            height: 50vh;
+            min-width: 100vw; /* cant go below this but can go above*/
+        }
+        .box2{
+            background: rgb(219, 19, 215);
+            width: 50vw;
+            height: 50vh;
+            /* max-width: 340vh; */ /* for max width and max height cant go above this but can go below */
+        }
+    </style>
+</head>
+<body>
+    <div class="f">
+        F
+        <div class="container">
+            Lorem ipsum dolor sit 
+        </div>
+    </div>
+    <div class="box1">
+        THIS IS BOX 1
+        normal height and width used
+    </div>
+    <div class="box2">
+        THIS IS BOX 2
+        vh and vw used 
+    </div>
+</body>
+</html>
