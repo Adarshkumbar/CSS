@@ -21,6 +21,12 @@
             height: 100px;
             position: sticky;
             top: 0%;
+            z-index: 10;
+            list-style-type: kannada;
+            padding:30px;
+        }
+        nav ul {
+           list-style: url(icons.png);
         }
         .sample{
             background: rgb(228, 225, 225);
@@ -35,23 +41,29 @@
             text-align: center;
             text-rendering: geometricPrecision;
             background: lime;
-            position:fixed;
+            position:sticky;
+            z-index: 0;
         }
         .box{
             background: rgb(122, 122, 215);
             height: 200vh;
             border: 2px black solid;
+            position: relative;
+            z-index: 2;
         }
     </style>
 </head>
 <body>
    <nav>
-        <ul>
+        <ul >
             <li>HOME</li>
             <li>ABOUT</li>
             <li>CONTACT</li>
         </ul>
     </nav>
+    <div class="mid">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at, esse magni iure sed ducimus praesentium, ipsam, culpa ipsum facere deleniti fuga adipisci. Voluptate ex dignissimos laborum obcaecati ut ipsam pariatur voluptatem. Molestiae tempore accusamus architecto recusandae minima ab aut corporis deserunt! Ullam earum beatae veniam. Excepturi, maiores esse tenetur magnam voluptatum asperiores adipisci culpa, aspernatur voluptas totam tempore quia repellendus nesciunt accusamus alias assumenda blanditiis laboriosam iure sapiente numquam explicabo, rerum quas eius cum. Unde nesciunt ex commodi cum minima atque alias dicta doloribus deleniti! Tenetur consequatur beatae sapiente voluptatem reprehenderit. Quo, quibusdam? Consequatur neque ullam sunt deserunt nulla.
+    </div>
     <div class="box">
         This is box
         <div class="sample">

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+<!-- 1.nav bar 2. bg image 3. flex box to align boxes -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background: black;
+            color: white;
+            height: 18vh;
+        }
+        ul{
+            display: flex;
+            justify-content: end;
+            list-style: none;
+        }
+        /* li{
+           list-style: none;
+        }  */
+        #l1{
+            position: relative;
+            top: -43px;
+            right: 164px;
+            text-decoration: none;
+            color: white;
+        }
+        #l2{
+            position: relative;
+            top: -43px;
+            right: 84px;
+        }
+        #l3{
+            position: relative;
+            top: -43px;
+            right: 4px;
+        }
+        .mid{
+            background-image: url(images.jpg);
+            height: 45vh;
+        }
+        .container{
+            height: 100vh;
+            background: rgb(215, 217, 217);
+            color: black;
+            border: 2px black solid;
+            display: flex;
+            flex-direction:row;
+            /* flex-wrap: wrap; */
+            align-items: center;
+            /* flex-flow: row; */
+            justify-content:space-around;
+        }
+        .b1{
+            background: red;
+            color: black;
+            border: 2px black solid;
+            width: 25vw;
+            height: 99vh;
+            /* flex-basis: 100px; */
+            /* flex-grow: 2; */
+        }
+        .b2{
+            background: green;
+            color: black;
+            border: 2px black solid;
+            width: 25vw;
+            height: 99vh;
+            /* flex-basis: 100px; */
+            
+        }
+        .b3{
+            background: blue;
+            color: black;
+            border: 2px black solid;
+            width: 25vw;
+            height: 99vh;
+            /* flex-basis: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="Button-circle-person_icon-icons.com_52230.png" style="opacity: 2;">
+        <ul>
+            <li id="l1"><a href="https://www.google.co.in/"target="_blank">HOME</a></li>
+            <li id="l2"><a href="https://www.google.co.in/"target="_blank">ABOUT</a></li>
+            <li id="l3"><a href="https://www.google.co.in/"target="_blank">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="mid">
+    </div>
+    <div class="container">
+        <div class="b1">This is Box1</div>
+        <div class="b2">This is Box2</div>
+        <div class="b3">This is Box3</div>
+    </div>
+</body>
+</html>
