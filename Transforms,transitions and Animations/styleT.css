@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: inline-block;
+}
+.box1{
+    border: 2px black solid;
+    /* transform:translate(40vw ,5% );moves x and y direction */
+    /* transform: rotate(135deg); *//*rotate x y and z using rotatex rotatey and rotatez*/
+    transform:translate(40vw ,5% ) rotate(335deg); /*use in one line to make both work*/
+    /* transform: skew(10deg,10deg); *//*give and angle x and y axis*/
+}
+.box2{
+    height: 50vh;
+    background-color: grey;
+    border: 2px black solid;
+    position: relative;
+    left: 40vw;
+    top: 5vh;
+    transform: rotateX(45deg);
+}
