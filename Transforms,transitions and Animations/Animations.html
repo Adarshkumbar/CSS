@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations
+        <!-- Practice bit more and MDN reference w3school -->
+    </title>
+    <style>
+        body{
+            border:2px black solid;
+            display: inline-block;
+            animation: tex 4s ease-in 1s infinite alternate-reverse none;
+        }
+        img{
+            height:20vh ;
+            width:20vw;
+            border-radius: 10%;
+            /* animation-name: adie;
+            animation-duration: 4s;
+            animation-timing-function:initial;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+            /* animation-play-state: paused; */
+            animation: adie 4s ease-in 1s infinite alternate-reverse none;
+            /* animation: 4s initial infinite alternate ; */
+        }
+
+        @keyframes adie {
+            from{
+                width:20vw;
+                height : 40vh;
+            }
+            to{
+                width:50vw;
+                height:90vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    this is text<br>
+    <img src="jonas-denil-W2-HBJS-szg-unsplash.jpg" alt="no image sorry" >
+</body>
+</html>
