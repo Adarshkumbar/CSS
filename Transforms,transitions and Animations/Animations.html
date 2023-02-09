@@ -8,10 +8,9 @@
         <!-- Practice bit more and MDN reference w3school -->
     </title>
     <style>
-        body{
-            border:2px black solid;
-            display: inline-block;
-            animation: tex 4s ease-in 1s infinite alternate-reverse none;
+        *{
+            padding: 0px;
+            margin: 0;
         }
         img{
             height:20vh ;
@@ -26,7 +25,24 @@
             animation: adie 4s ease-in 1s infinite alternate-reverse none;
             /* animation: 4s initial infinite alternate ; */
         }
-
+        .progress{
+            background-color: red;
+            height: 2.4px;
+            width: 1vw;
+            animation: probar 2s ease-in  1s;
+        }
+        @keyframes probar {
+            0%{
+                width: 0vw;
+            }
+            /* 50%{
+                width: 50vw;
+            } */
+            100%{
+                width: 100vw;
+            }
+            
+        }
         @keyframes adie {
             from{
                 width:20vw;
@@ -40,6 +56,7 @@
     </style>
 </head>
 <body>
+    <div class="progress"></div>
     this is text<br>
     <img src="jonas-denil-W2-HBJS-szg-unsplash.jpg" alt="no image sorry" >
 </body>
